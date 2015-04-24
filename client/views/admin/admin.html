@@ -1,0 +1,9 @@
+<template name = 'adminTemplate'>
+	<h3 id='admin_welcome'>Hi, Admin!</h3>
+	<ul id='users_list'>
+		<h4>All users in database</h4>
+		{{#each users}}
+			<li>{{emails.[0].address}}</li>
+		{{/each}}
+	</ul>
+</template>

@@ -1,0 +1,26 @@
+/* CSS declarations go here */
+
+#welcome_header{
+	margin-left: 2em;
+	margin-top: 1em;
+	opacity: 0.8;
+	clear: both;
+}
+
+#admin_welcome{
+	margin-left: 2.6em;
+	margin-top: 0.5em;
+	opacity: 0.9;
+}
+
+.login-buttons-dropdown-align-{
+	float: left;
+	margin-left: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#users_list{
+	margin-left: 4em;
+	margin-top: 2em;
+}
