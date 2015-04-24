@@ -3,7 +3,11 @@
 	<ul id='users_list'>
 		<h4>All users in database</h4>
 		{{#each users}}
-			<li>{{emails.[0].address}}</li>
+			<li class='single_user'>{{emails.[0].address}}</li>
+				<ul>
+					<li class='user_attributes'><b>profile created: </b>{{createdAt}}</li>
+					<li class='user_attributes'><b>admin? </b>{{#if notAdmin}}false{{/if}}{{admin}}</li>
+				</ul>
 		{{/each}}
 	</ul>
 </template>

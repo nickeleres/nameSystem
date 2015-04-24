@@ -29,3 +29,12 @@
 	margin-left: 4em;
 	margin-top: 2em;
 }
+
+.single_user{
+	text-decoration: underline;
+	margin-bottom: 0.5em;
+}
+
+.user_attributes{
+	margin-bottom: 0.4em;
+}
