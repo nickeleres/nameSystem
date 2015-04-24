@@ -20,6 +20,11 @@
 	margin-bottom: 1em;
 }
 
+#admin_button{
+	margin-top: 0.3em;
+	margin-left: 0.5em;
+}
+
 #users_list{
 	margin-left: 4em;
 	margin-top: 2em;

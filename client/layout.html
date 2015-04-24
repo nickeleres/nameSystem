@@ -4,6 +4,7 @@
 
 <template name='layoutTemplate'>
 		{{> loginButtons}}
+		<a class='btn' id='admin_button' href="{{pathFor 'admin'}}">admin</a>
 		<h2 id='welcome_header'>Welcome to NameSystem</h2>
 		{{> yield}}
 </template>
