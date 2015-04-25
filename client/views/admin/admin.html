@@ -7,6 +7,12 @@
 				<ul>
 					<li class='user_attributes'><b>profile created: </b>{{createdAt}}</li>
 					<li class='user_attributes'><b>admin? </b>{{#if notAdmin}}false{{/if}}{{admin}}</li>
+					<label class="radio-inline">
+				          <input name="adminStatus" id="radio1" value="true" type="radio"> true
+				    </label>
+				    <label class="radio-inline">
+				          <input name="adminStatus" id="radio2" value="false" checked="checked" type="radio"> false
+			        </label>
 				</ul>
 		{{/each}}
 	</ul>
