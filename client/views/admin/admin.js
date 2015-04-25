@@ -16,8 +16,15 @@ Template.adminTemplate.helpers({
 	notAdmin: function(){
 		var user_object = Meteor.users.find({_id: this._id}, {admin: 1}).fetch();
 		var admin_status = user_object[0].admin;
-		// console.log(admin_status);
 		return admin_status != 'true';
+	}
+});
+
+Template.adminTemplate.events({
+	'click .set_admin_status': function(ev){
+		ev.preventDefault();
+		$('.set_admin_status').css('display', 'none');
+		$('.admin_group').css('display', 'inline-block');
 	}
 });
 

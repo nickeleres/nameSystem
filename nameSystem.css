@@ -33,8 +33,38 @@
 .single_user{
 	text-decoration: underline;
 	margin-bottom: 0.5em;
+	text-align: left;
 }
 
 .user_attributes{
 	margin-bottom: 0.4em;
+}
+
+.save_admin_status{
+	width: 4em;
+	height: 1.5em;
+	line-height: 50%;
+}
+
+.admin_group{
+	display: none;
+	margin-left: 1em;
+}
+
+#admin_status{
+	float: left;
+	margin-left: 2em;
+}
+
+.set_admin_status{
+	width: 9.5em;
+	height: 1.5em;
+	line-height: 50%;
+	margin-left: 1em;
+	text-align: left;
+}
+
+.empty{
+	height: 10px;
+	width: 100px;
 }
