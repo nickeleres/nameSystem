@@ -30,7 +30,20 @@ Template.adminTemplate.events({
 	'click .set_admin_status': function(ev){
 		ev.preventDefault();
 
-		Meteor.call('setAdminStatus', this._id);
+		var selected_user = Meteor.users.find({_id: this._id}).fetch();
+		var current_user = Meteor.user();
+
+		if(selected_user[0]._id != current_user._id){
+			if(selected_user[0].admin === true){
+				Meteor.call('removeAdminStatus', this._id);
+			} else {
+				Meteor.call('addAdminStatus', this._id);
+			}
+
+		} else {
+			alert('You cannot change your own admin status');
+		}
+			
 	}
 });
 
