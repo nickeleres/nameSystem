@@ -25,6 +25,12 @@ Template.adminTemplate.events({
 		ev.preventDefault();
 		$('.set_admin_status').css('display', 'none');
 		$('.admin_group').css('display', 'inline-block');
+	},
+
+	'click .set_admin_status': function(ev){
+		ev.preventDefault();
+
+		Meteor.call('setAdminStatus', this._id);
 	}
 });
 
