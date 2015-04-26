@@ -39,7 +39,6 @@ Template.adminTemplate.events({
 			} else {
 				Meteor.call('addAdminStatus', this._id);
 			}
-
 		} else {
 			alert('You cannot change your own admin status');
 		}

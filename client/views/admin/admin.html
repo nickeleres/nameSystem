@@ -7,15 +7,6 @@
 				<ul>
 					<li class='user_attributes'><b>profile created: </b>{{createdAt}}</li>
 					<li class='user_attributes' id='admin_status'><b>admin? </b>{{#if notAdmin}}false{{/if}}{{admin}}</li>
-					<div class="admin_group">
-				    	<label class="radio-inline">
-				          <input name="adminStatus" id="radio1" value="true" type="radio"> true
-				    	</label>
-					    <label class="radio-inline">
-					          <input name="adminStatus" id="radio2" value="false" type="radio"> false
-				        </label>
-				        <button type="submit" class="btn btn-default save_admin_status">save</button>
-				    </div>
 					<button type="submit" class="btn btn-default set_admin_status">change admin status</button>
 					<div class="empty"></div>
 				</ul>
