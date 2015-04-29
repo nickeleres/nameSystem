@@ -6,9 +6,12 @@
 			<li class='single_user'>{{emails.[0].address}}</li>
 				<ul>
 					<li class='user_attributes'><b>profile created: </b>{{createdAt}}</li>
+					<li class='user_attributes'><b>username: </b></li>
+					<li class='user_attributes'><b>first name: </b></li>
+					<li class='user_attributes'><b>last name: </b></li>
 					<li class='user_attributes' id='admin_status'><b>admin? </b>{{#if notAdmin}}false{{/if}}{{admin}}</li>
 					<button type="submit" class="btn btn-default set_admin_status">change admin status</button>
-					<div class="empty"></div>
+					<div class='empty'></div>
 				</ul>
 		{{/each}}
 	</ul>
