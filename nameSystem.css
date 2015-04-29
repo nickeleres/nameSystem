@@ -31,9 +31,12 @@
 }
 
 .single_user{
-	text-decoration: underline;
 	margin-bottom: 0.5em;
 	text-align: left;
+}
+
+.user_email_style{
+	text-decoration: underline;
 }
 
 .user_attributes{
@@ -66,4 +69,21 @@
 .empty{
 	height: 10px;
 	width: 100px;
+}
+
+.edit_user_button{
+	height: 1.5em;
+	width: 4em;
+	line-height: 50%;
+}
+
+.user_input{
+	width: 10em;
+	height: 2em;
+}
+
+.submit_button{
+	width: 6em;
+	height: 1.5em;
+	line-height: 50%;
 }

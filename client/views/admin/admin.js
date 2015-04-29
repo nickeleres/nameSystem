@@ -23,7 +23,8 @@ Template.adminTemplate.helpers({
 Template.adminTemplate.events({
 	'click .set_admin_status': function(ev){
 		ev.preventDefault();
-		$('.set_admin_status').css('display', 'none');
+
+		$('.set_admin_status').css('display', 'nonde');
 		$('.admin_group').css('display', 'inline-block');
 	},
 
@@ -43,6 +44,38 @@ Template.adminTemplate.events({
 			alert('You cannot change your own admin status');
 		}
 			
+	},
+
+	'click .edit_user_button': function(ev){
+		ev.preventDefault();
+
+		$('.user_name_info').css('display', 'inline-block');
+	},
+
+	'click #update_username': function(ev){
+		ev.preventDefault();
+
+		// var username = template.$('#username_field').val()
+
+		// var username = template.find('#username_field');
+
+		var username = $(ev.target).find($('#username_field')).val();
+
+		console.log(username);
+	},
+
+	'click #update_first_name': function(ev){
+		ev.preventDefault();
+
+		var first_name = $(ev.target).find('[name = first_name]').val();
+
+		console.log(first_name);
+	},
+
+	'click #update_last_name': function(ev){
+		ev.preventDefault();
+
+		var username = template.$('#last_name_field').val();
 	}
 });
 
