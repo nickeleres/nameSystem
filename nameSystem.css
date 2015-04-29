@@ -73,7 +73,7 @@
 
 .edit_user_button{
 	height: 1.5em;
-	width: 4em;
+	width: 2em;
 	line-height: 50%;
 }
 
@@ -86,4 +86,8 @@
 	width: 6em;
 	height: 1.5em;
 	line-height: 50%;
+}
+
+.edit_fields{
+	display: none;
 }

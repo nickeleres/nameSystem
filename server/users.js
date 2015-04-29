@@ -7,7 +7,7 @@ Meteor.publish('users', function(){
 	else if(this.userId != 'GfjaBg9ghfGefk9F8' ){
 		console.log('you are not an admin');
 	} else {
-		return Meteor.users.find({}, {fields: {createdAt: 1, admin: 1, emails: 1}}); 
+		return Meteor.users.find({}, {fields: {createdAt: 1, admin: 1, emails: 1, username: 1, first_name: 1, last_name: 1}}); 
 	}
 });
 
