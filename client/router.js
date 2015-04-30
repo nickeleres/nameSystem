@@ -6,8 +6,7 @@ Router.configure({
 
 var requireLogin = function() {
 	if (! Meteor.user()){
-		this.redirect('home');
-		this.next();
+		this.render('loginTemplate');
 	} else if (Meteor.loggingIn()) {
 		this.render('adminTemplate')
 	} else {
