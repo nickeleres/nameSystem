@@ -54,30 +54,40 @@ Template.adminTemplate.events({
 		$('.user_name_info').css('display', 'inline-block');
 	},
 
-	'click #update_username': function(ev, template){
+	'click .update_username': function(ev, template){
 		ev.preventDefault();
 
-		var username_field = template.$('input[id="username_field"]').val();
+		var id = this._id;
 
-		console.log(username_field);
+		// var test_field = template.$("input[class=' + id + '][name='username']").val();
 
-		Meteor.call('updateUsername', this._id, username_field);
+		// var test_field = template.$('input[class="' + id + '"]').val();
+
+		var test_field = $('.' + id).val();
+
+		console.log(test_field);
+
+		// var username_field = template.$('input[class="username_field"]').val();
+
+		console.log(this._id);
+
+		Meteor.call('updateUsername', this._id, test_field);
 
 	},
 
-	'click #update_first_name': function(ev, template){
+	'click .update_first_name': function(ev, template){
 		ev.preventDefault();
 
-		var first_name_field = template.$('input[id="first_name_field"]').val();
+		var first_name_field = template.$('input[class="first_name_field"]').val();
 
 		Meteor.call('updateFirstName', this._id, first_name_field);
 
 	},
 
-	'click #update_last_name': function(ev, template){
+	'click .update_last_name': function(ev, template){
 		ev.preventDefault();
 
-		var last_name_field = template.$('#last_name_field').val();
+		var last_name_field = template.$('.last_name_field').val();
 
 		console.log(last_name_field);
 
