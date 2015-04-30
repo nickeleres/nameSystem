@@ -5,9 +5,7 @@ Router.route('admin', {
 	template: 'adminTemplate',
 	waitOn: function(){
 		if(Meteor.user()){
-			var current_user_admin_status = Meteor.user()._id;
-			console.log(current_user_admin_status);
-			return Meteor.subscribe('users', current_user_admin_status);
+			return Meteor.subscribe('users');
 		}
 	}
 });

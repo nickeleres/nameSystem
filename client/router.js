@@ -23,16 +23,5 @@ var signInRoute = function(){
 	}
 }
 
-var requireAdmin = function(){
-	var user = Meteor.users.find({_id: Meteor.userId()}).fetch()[0].admin;
-	if(user = 'undefined'){
-		this.redirect('home');
-		this.next();
-	} else {
-		this.next();
-	}
-}
-
 Router.onBeforeAction(requireLogin);
 Router.onBeforeAction(signInRoute);
-// Router.onBeforeAction(requireAdmin);
